@@ -47,6 +47,8 @@ var TerraformPluginFrameworkExternalNameConfigs = map[string]config.ExternalName
 	//
 	// PodIdentityAssociation can be imported using the association ID by passing spec.forProvider.clusterName field
 	"aws_eks_pod_identity_association": eksPodIdentityAssociation(),
+	"aws_eks_access_entry": config.IdentifierFromProvider,
+	"aws_eks_access_policy_association": config.IdentifierFromProvider,
 
 	// opensearchserverless
 	//
